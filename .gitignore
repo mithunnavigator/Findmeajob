@@ -1,0 +1,19 @@
+# Only these go to GitHub. Everything else in this folder stays on this
+# computer: the database and files (data\), the portable Node.js, PostgreSQL
+# and Chromium (runtime\), logs, downloads, old versions and old icons.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/README-WINDOWS.txt
+!/findmeajob.ps1
+!/findmeajob.ico
+!/Start Findmeajob.cmd
+!/Stop Findmeajob.cmd
+!/Change Password.cmd
+!/tools/
+!/app/
+
+# app\ has its own .gitignore too (node_modules, .next, .env and the rest).
+/app/.env
+/app/test-results/
