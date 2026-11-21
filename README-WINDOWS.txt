@@ -56,7 +56,8 @@ BACKING UP
   To back up the whole install, stop Findmeajob and copy this folder.
 
 CHANGES MADE TO THE ORIGINAL APP (re-apply them when updating)
-  Findmeajob is Dossier 1.11.0 (github.com/AienTech/dossier), renamed.
+  Findmeajob is Dossier 1.11.0 (github.com/AienTech/dossier), renamed, with
+  Next.js upgraded from 16.4.3 to 16.4.6 for its security fixes.
   - The name: every "Dossier" the app shows became "Findmeajob" (in src and
     e2e).
   - The logo: the MS shield, cut from data\logo-original.webp, in
