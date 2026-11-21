@@ -1,46 +1,38 @@
 <p align="center">
-  <img src="src/app/icon.svg" alt="" width="80" height="80">
+  <img src="src/app/icon.png" alt="" width="96" height="96">
 </p>
 
-<h1 align="center">Dossier</h1>
+<h1 align="center">Findmeajob</h1>
 
 <p align="center">
-  Your job search, on your own server: one profile, a tailored resume and cover letter for every job, and every application tracked from draft to offer.
+  Your job search on your own computer: one profile, a tailored resume and cover letter for every job, and every application tracked from draft to offer.
 </p>
 
 <p align="center">
-  <a href="https://github.com/AienTech/dossier/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/AienTech/dossier?label=release"></a>
-  <a href="https://github.com/AienTech/dossier/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/AienTech/dossier/actions/workflows/ci.yml/badge.svg"></a>
   <a href="LICENSE"><img alt="License: AGPL-3.0" src="https://img.shields.io/badge/license-AGPL--3.0-blue"></a>
-  <a href="https://github.com/AienTech/dossier/pkgs/container/dossier"><img alt="Docker image: ghcr.io/aientech/dossier" src="https://img.shields.io/badge/image-ghcr.io%2Faientech%2Fdossier-2496ED?logo=docker&logoColor=white"></a>
+  <img alt="Windows, no Docker" src="https://img.shields.io/badge/Windows-no%20Docker-0078D4?logo=windows&logoColor=white">
   <img alt="Next.js 16" src="https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs">
   <img alt="PostgreSQL 18" src="https://img.shields.io/badge/PostgreSQL-18-4169E1?logo=postgresql&logoColor=white">
 </p>
 
-Dossier keeps your career history in one profile and turns it into a clean resume. For every job you apply to, it reads the posting, shows how you match, and drafts a tailored resume and cover letter that only use facts from your profile. You refine them in a chat, download them as PDFs and track each application from draft to offer.
+Findmeajob keeps your career history in one profile and turns it into a clean resume. For every job you apply to, it reads the posting, shows how you match, and drafts a tailored resume and cover letter that only use facts from your profile. You refine them in a chat, download them as PDFs and track each application from draft to offer.
 
-It's for one person on a small server: one password, your data in your own PostgreSQL database, and an AI model of your choice. That can be a local model through Ollama or LM Studio, so your profile and documents stay on your own hardware, or a hosted one (any OpenAI-compatible API, Anthropic or Mistral), which then receives what it writes from. [Privacy](https://github.com/AienTech/dossier/wiki/Privacy) says what goes where.
+It's for one person: one password, your data in your own PostgreSQL database, and an AI model of your choice. That can be a local model through LM Studio or Ollama, so your profile and documents stay on your own computer, or a hosted one (any OpenAI-compatible API, Anthropic or Mistral), which then receives what it writes from.
 
-**Get started:** [run it on your computer](#run-it-on-your-computer) in a few minutes, or [self-host it](#self-hosting) on a server. The [installation guide](https://github.com/AienTech/dossier/wiki) covers every way: Docker with or without Compose, Node.js, a plain Ubuntu server, CapRover, Coolify and Dokploy.
-
-## Demo
-
-![Dossier in use: the dashboard, dragging a card on the board, a new application from a pasted posting, refining the tailored resume in the chat, the cover letter, and switching resume themes](.github/images/demo.gif)
-
-<sub>Recorded with the demo data (Jane Doe is made up) and a stand-in AI server that answers at once, played at 1.2× speed. With a real model, reading a posting and writing the documents takes from a few seconds to a few minutes.</sub>
+Findmeajob is a Windows edition of [Dossier](https://github.com/AienTech/dossier) 1.11.0 that runs without Docker or a server. **To install it on Windows, see the [main README](../README.md).**
 
 ## Features
 
 - **Profile:** basics, skills and languages, experience, projects, education, publications and references, in the order you choose, with a strength meter that counts only what a profile needs. Projects (side, open-source, course or thesis work) show what you can do where your job titles don't yet. Publications are cited in your own style, with bold and italics, and go on resumes word for word. Start it from an existing resume (PDF, Word or Markdown) if you like.
 - **Base resume:** twelve themes and a theme builder, previewed live and printed to PDF on the server. Duplicate themes, or share them as files.
 - **Find jobs:** search postings near your city, or anywhere you choose, through JSearch (LinkedIn, Indeed and more), Adzuna or FreeHire (company career pages). Save the good ones, dismiss the rest, score any of them against your profile, and start an application from a posting with one click.
-- **Startups:** startups that are hiring, from YC startups' job posts and Hacker News' monthly “Who is hiring?” thread, kept to the ones that hire where you live or remotely from your country and ranked against your profile, with the address each one publishes for applications. Dossier reads their sites politely and follows their robots.txt. Start an application to one with a click; you decide whom to write to.
+- **Startups:** startups that are hiring, from YC startups' job posts and Hacker News' monthly “Who is hiring?” thread, kept to the ones that hire where you live or remotely from your country and ranked against your profile, with the address each one publishes for applications. Findmeajob reads their sites politely and follows their robots.txt. Start an application to one with a click; you decide whom to write to.
 - **Job agent (optional):** once a day it runs one search for you, skips what you've seen, scores the new postings against your profile and keeps the best on the Agent screen, with its reasons. It can prepare tailored drafts too, which wait for your review. It never sends or applies.
-- **New application:** paste a posting; Dossier pulls out the details and requirements, matches them against your profile, and writes a tailored resume and cover letter in the tone you pick.
+- **New application:** paste a posting; Findmeajob pulls out the details and requirements, matches them against your profile, and writes a tailored resume and cover letter in the tone you pick.
 - **Never invents experience:** drafts only use facts from your profile. What the posting asks for and your profile doesn't have is shown as a gap, not made up.
 - **Refine:** ask for changes in a chat, edit or regenerate any part (every part of the cover letter too: sender, date, recipient, greeting and sign-off, written in the letter's language), undo AI changes or go back to any earlier version, keep private notes.
 - **Send:** an email to go with each application, to whoever the posting says to send it to, ready to copy or open in your mail app, with the resume and cover letter PDFs to attach. Edit, rewrite or refine it like the documents.
-- **MCP connector (optional):** use Dossier from Claude, on claude.ai, in the Desktop and mobile apps or in Claude's command-line app, on your own Claude plan, or from another MCP app such as n8n. Claude can search for jobs, score them against your profile, read your profile and applications, and save the resume and cover letter it writes as a Draft, checked like Dossier's own. It never sends or deletes anything. Without an AI model of Dossier's own, **Write it with Claude** hands a posting to a new Claude chat. Turn it on in Settings → MCP connector (see [Connecting Claude](https://github.com/AienTech/dossier/wiki/Connecting-Claude)).
+- **MCP connector (optional):** use Findmeajob from Claude, on claude.ai, in the Desktop and mobile apps or in Claude's command-line app, on your own Claude plan, or from another MCP app such as n8n. Claude can search for jobs, score them against your profile, read your profile and applications, and save the resume and cover letter it writes as a Draft, checked like Findmeajob's own. It never sends or deletes anything. Without an AI model of Findmeajob's own, **Write it with Claude** hands a posting to a new Claude chat. Turn it on in Settings → MCP connector (see [Connecting Claude](https://github.com/AienTech/dossier/wiki/Connecting-Claude)).
 - **Gmail and Calendar (optional):** connect your Google account to send an application from your own address with its PDFs attached, see employers' replies next to each application, have the AI read what they ask and draft your answer from your profile, offer interview times you're free, and see your month and the week ahead on the dashboard, with interviews kept in step with Google Calendar both ways. Nothing is sent without your confirmation. Set it up by entering your Google OAuth client in Settings → Google, or with `DOSSIER_GOOGLE_CLIENT_ID` and `DOSSIER_GOOGLE_CLIENT_SECRET` (see [Connecting Gmail and Calendar](https://github.com/AienTech/dossier/wiki/Connecting-Gmail-and-Calendar)).
 - **Track:** a board and a table of every application, and a dashboard with your funnel (last 30 days, 90 days or all time), a week-by-week chart, what's worth a look next, upcoming interviews included, and a calendar.
 - **Your data:** export and import everything as one file, nightly backups, and Delete everything.
@@ -69,6 +61,8 @@ It's for one person on a small server: one password, your data in your own Postg
 </table>
 
 <sub>The screenshots show the demo data: Jane Doe is made up.</sub>
+
+> **Note:** the sections from here on are the original Dossier's documentation, for running it with Docker or on a server. For Findmeajob on Windows without Docker, see the [main README](../README.md) and [README-WINDOWS.txt](../README-WINDOWS.txt).
 
 ## Run it on your computer
 

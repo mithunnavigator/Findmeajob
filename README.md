@@ -1,8 +1,39 @@
-# Findmeajob
+<p align="center">
+  <img src="app/src/app/icon.png" alt="" width="96" height="96">
+</p>
+
+<h1 align="center">Findmeajob</h1>
 
 Findmeajob keeps your career history in one profile and turns it into tailored resumes and cover letters for each job you apply to. It tracks every application, finds job postings, and can use an AI model running on your own computer (LM Studio or Ollama) or a hosted one.
 
 This is a Windows edition of **[Dossier](https://github.com/AienTech/dossier)** 1.11.0 by AienTech, renamed and set up to run as ordinary personal software: **no Docker and no server**. A portable Node.js and PostgreSQL run from this folder, and everything stays on your computer.
+
+## Screenshots
+
+![The dashboard: your funnel, a week-by-week chart and what's worth a look next](app/.github/images/dashboard.png)
+
+<table>
+  <tr>
+    <td width="50%"><img src="app/.github/images/application.png" alt="An application with its tailored resume and the chat that refines it"><br>An application: the tailored resume, and a chat to refine it</td>
+    <td width="50%"><img src="app/.github/images/new-application.png" alt="A new application, showing how the profile matches the posting's requirements"><br>A new application: how you match the posting</td>
+  </tr>
+  <tr>
+    <td><img src="app/.github/images/applications.png" alt="The applications board, with columns from draft to offer"><br>Every application on a board, from draft to offer</td>
+    <td><img src="app/.github/images/find-jobs.png" alt="Find jobs: postings with one open"><br>Find jobs and start an application from a posting</td>
+  </tr>
+  <tr>
+    <td><img src="app/.github/images/resume.png" alt="The base resume next to its themes"><br>The base resume, with twelve themes and a theme builder</td>
+    <td><img src="app/.github/images/profile.png" alt="The profile editor, with its sections and strength meter"><br>One profile that every resume and letter comes from</td>
+  </tr>
+  <tr>
+    <td><img src="app/.github/images/inbox.png" alt="The inbox: employers' replies from Gmail and what each one asks"><br>Replies from Gmail, read by the AI, with answers it drafts</td>
+    <td><img src="app/.github/images/calendar.png" alt="The dashboard with the calendar beside the cards"><br>Your interviews and Google Calendar on the dashboard</td>
+  </tr>
+</table>
+
+<sub>The screenshots show demo data: Jane Doe is made up. They're taken by <code>app/e2e/readme-images.ts</code> (see <code>app/playwright.readme.config.ts</code>).</sub>
+
+More about every feature: [app/README.md](app/README.md).
 
 ## What's here
 
